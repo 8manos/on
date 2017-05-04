@@ -1465,7 +1465,11 @@
 		max-width: 100%;
 		z-index: 3;
 	}
-
+		#lang {
+			position: absolute;
+			top: 1em;
+			right: 1em;
+		}
 		#main article {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
@@ -1477,11 +1481,15 @@
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 50rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
 			opacity: 0;
+		}
+
+		#main article iframe {
+			max-width: 100%;
 		}
 
 			#main article.active {
